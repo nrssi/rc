@@ -8,6 +8,7 @@ use clap::{Parser, Subcommand};
 use chrono::{Utc, Datelike};
 use prettytable::{Table, format::{self, FormatBuilder}};
 #[derive(Parser)]
+#[clap(author="A simple CLI Application to store your expense information", version, about, long_about = None)]
 struct Cli{
     #[clap(subcommand)]
     command : Option<Command>
