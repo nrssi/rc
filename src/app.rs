@@ -9,9 +9,9 @@ use std::fs::{self, File};
 use std::path::Path;
 #[derive(Parser)]
 #[clap(
-    author = "A simple CLI Application to store your expense information",
+    author = "N R Shyamsundar Iyanger",
     version,
-    about
+    about = "A simple CLI Application to store your expense information"
 )]
 #[clap(name = "Record Keeper")]
 struct Cli {
